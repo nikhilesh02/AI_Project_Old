@@ -1,0 +1,3 @@
+ECOM is Enterprise Customer Order Management Service
+And Using Ecom Application any user who are sales agent. customer support executive and other users can create customer and create order for them. 
+Order can be brodband, mobile , DDI numbers etc for enterprise level customer. FOr order fuliflmet we connect with ESOM or NCSOM. FOr Billing we connect with Kenan application. Connectivity can be through JMS or API calls. ECOM applications has many modules, like web, ejb, batch, sso, eil, onl, OBs etc.

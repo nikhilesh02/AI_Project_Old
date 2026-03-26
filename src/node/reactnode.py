@@ -2,7 +2,7 @@
 
 from typing import List, Optional
 from src.state.rag_state import RAGState
-
+import uuid 
 from langchain_core.documents import Document
 from langchain_core.tools import Tool
 from langchain_core.messages import HumanMessage
@@ -57,7 +57,7 @@ class RAGNodes:
             description="Search Wikipedia for general knowledge.",
             func=wiki.run,
         )
-
+        wikipedia_tool.func.__globals__['uuid'] = uuid  # Add this line
         return [retriever_tool, wikipedia_tool]
 
     def _build_agent(self):
